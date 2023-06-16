@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titles{
+    display: inline-flex;
+    gap: 60px;
+    font-size: .5rem;
+    padding: 20px 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 10px;
+}
+
+.titulo{
+    width: 20%;
+    font-size: 2rem;
+}
+
+.texto{
+    width: 30%;
+}
+
+.botao{
+    background-color: #E95463;
+    display: flex;
+    width: 300px;
+    height: 67px;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+    place-self: center;
+}
+
+/* Responsividade Ipad mini */
+
+@media(max-width: 1024px) {
+    html{
+        background-size: cover;
+        width: 100%;
+    }
+    body{
+        min-width:768px;
+        max-width: 1024px;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        align-items: center;
+        position: relative;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        margin-left: 10px;
+        justify-content: space-between;
+        max-width: 400px;
+    }
+    
+    .titles{
+        display: grid;
+    }
+    .conteudo{
+        margin-top: 600px;
+        margin-bottom: 400px;
+        position: relative;
+    }
+}
+
+/*Responsividade Iphone SE */
+
+@media(max-width: 667px){
+    body{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        background-position: center;
+       
+    }
+}
